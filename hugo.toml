@@ -1,5 +1,5 @@
-baseURL = 'https://kykitus.github.io/JakubKubaKitus'
+baseURL = 'https://kykitus.github.io'
 languageCode = 'en-us'
-title = 'JakubKubaKitus'
+title = 'My Portfolio Site'
 
-theme = 'hello-friend-ng'
+theme = "hugo-brewm"
