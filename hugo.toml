@@ -1,5 +1,0 @@
-baseURL = 'https://kykitus.github.io'
-languageCode = 'en-us'
-title = 'My Portfolio Site'
-
-theme = "hugo-brewm"
