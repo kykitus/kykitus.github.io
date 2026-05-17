@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FPE:FaB - Map Structure - JakubKubaKitus</title><meta name="description" content="So my first question I asked myself while making the game is&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="./../fpefab-map-structure/"><link rel="stylesheet" href="./../assets/css/style.css?v=c08f8540d506d9aeff445ee3dbabb9d5"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./../fpefab-map-structure/"},"headline":"FPE:FaB - Map Structure","datePublished":"2026-05-16T18:48+02:00","dateModified":"2026-05-17T10:31+02:00","description":"So my first question I asked myself while making the game is&hellip;","author":{"@type":"Person","name":"Jakub \"Kitus\" Rojek","url":"./../authors/jakub-kitus-rojek/"},"publisher":{"@type":"Organization","name":"Jakub \"Kitus\" Rojek"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="post-template"><div class="container"><header class="header" id="js-header"><a href="./../" class="logo">JakubKubaKitus</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="./../my-projects-2/" target="_self">Projects</a></li><li><a href="./../gallery-2/" target="_self">Gallery</a></li><li><a href="https://github.com/kykitus" target="_self">Github Profile</a></li></ul></nav></header><main class="post"><article class="content wrapper"><header class="hero"><p class="content__meta">By <a href="./../authors/jakub-kitus-rojek/" rel="author" title="Jakub &quot;Kitus&quot; Rojek">Jakub &quot;Kitus&quot; Rojek</a> Published on <time datetime="2026-05-16T18:48">May 16, 2026</time></p><h1 class="content__title">FPE:FaB - Map Structure</h1></header><div class="content__entry"><p>So my first question I asked myself while making the game is how do I make the map auto generate? It requires some sort of pattern, that will serve as the heart of the generator. That's why I reached to the idea of the graph structure.<br><br>Here I present you the current "canon" base of every school you will visit in the base game:</p><figure class="post__image post__image--center"><img loading="lazy" src="./../media/posts/15/graph-4.png" alt="" width="608" height="610" sizes="(max-width: 1024px) 100vw, 1024px" srcset="./../media/posts/15/responsive/graph-4-xs.png 300w, ./../media/posts/15/responsive/graph-4-sm.png 480w, ./../media/posts/15/responsive/graph-4-md.png 768w, ./../media/posts/15/responsive/graph-4-lg.png 1024w"><figcaption>Used CSAcademy graph editor to make this</figcaption></figure><p>As you can see, there are 5 sections, where 4 are unlockable only by a key, and the act of unlocking new path will be also the one, where the player will meet with difficulty spike due to making new killer to appear on the map. </p><p> </p><p>My next point, was to make the map as customizable as possible. At this point, I am not sure how to make mod support, but I may know how to make my rules as editable as possible. And that's how I started trying to make customizable graph reader from file.</p><p>It took me 2 weeks until I just took everything I did already, and threw into the trash can. Simple text file couldn't match the readability of existing file formats, and vice versa when it comes to ease of use. I even remember making some custom file extensions like ".nmg" and ".mg".</p><p>That was until I recalled the memory of when I needed to learn how to setup the IP of a Linux Terminal Machine in IT class in School. Then I finally found. My desire to make creation making easy and readable at the same time couldn't come true until I found that one particular serialization format.</p><p>Behold, the ever great ".yaml" format</p><pre class="language-yaml"><code>sections:
+
+  - id: 0
+    src: -1
+    size: 40
+    rooms: 10
+    min_dist: 18
+
+  - id: 1
+    src: 0
+    size: 30
+    rooms: 6
+    min_dist: 16
+
+  - id: 1
+    src: 0
+    size: 30
+    rooms: 6
+    min_dist: 16
+
+  - id: 2
+    src: 0
+    size: 30
+    rooms: 5
+    min_dist: 16
+
+  - id: 2
+    src: 1
+    size: 30
+    rooms: 5
+    min_dist: 16
+
+</code></pre><p>Absolutely clean and easy to read.</p><p>As of now, this will make user able to customize their map generator as they want. Even letting them make 100 sections with nothing but one room each. But the part about how I was going to implement it is in the <strong><a href="./../fpefab-map-generator/">next article</a></strong>.</p></div><footer class="content__footer"><div class="content__last-updated">This article was updated on May 17, 2026</div><div class="content__footer__col"><div class="content__share"></div></div><nav class="content__nav"><div class="content__nav__next">Next Post<h5><a href="./../fpefab-map-generator/" class="invert" rel="next">FPE:FaB - Map Generator</a></h5></div></nav><div class="content__bio"><div><h3><a href="./../authors/jakub-kitus-rojek/" class="invert" title="Jakub &quot;Kitus&quot; Rojek">Jakub &quot;Kitus&quot; Rojek</a></h3></div></div><div class="content__related"><h3 class="u-h5">Related posts</h3><div class="content__related__wrap"><figure><figcaption><h4><a href="./../fpefab-samping-sampled-samples/" class="invert">FPE:FaB - Sampling Sampled Samples</a></h4><time datetime="2026-05-17T10:21">May 17, 2026</time></figcaption></figure><figure><figcaption><h4><a href="./../fpefab-map-generator/" class="invert">FPE:FaB - Map Generator</a></h4><time datetime="2026-05-16T19:26">May 16, 2026</time></figcaption></figure></div></div></footer></article></main><footer class="footer"><div class="footer__copyright">Powered by Publii</div></footer></div><script defer="defer" src="./../assets/js/scripts.min.js?v=1762f7ab131e33a4eb8fb224822de245"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.navbar'};</script><script>/*<![CDATA[*/var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};/*]]>*/</script></body></html>
