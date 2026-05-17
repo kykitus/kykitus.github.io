@@ -117,7 +117,7 @@
     {
         "path": "/fast-mush-game/index.html",
         "type": "file",
-        "md5": "568910f6828d67c643cfa306b3fbe28a"
+        "md5": "612a26834e57ec217de51940b295b8e4"
     },
     {
         "path": "fpefab-map-generator",
@@ -1115,6 +1115,11 @@
         "md5": false
     },
     {
+        "path": "/media/posts/5/icon-2.png",
+        "type": "file",
+        "md5": "a2a94799b031c1c997faef3b0e2994e1"
+    },
+    {
         "path": "/media/posts/5/icon.png",
         "type": "file",
         "md5": "1c287fe527dc0e35de5d62b7f18c408b"
@@ -1135,24 +1140,39 @@
         "md5": "438ce0413ab11053bb7e99d44708a821"
     },
     {
+        "path": "/media/posts/5/newicon.png",
+        "type": "file",
+        "md5": "10d1e3a9f3b58ba37f068329798824d3"
+    },
+    {
         "path": "/media/posts/5/pajnk-lin.png",
         "type": "file",
         "md5": "a8b1cb5335e535a66465564323b886c5"
     },
     {
-        "path": "/media/posts/5/placeholder-3.png",
-        "type": "file",
-        "md5": "58857a583116807f7a6e7511f4595c6b"
-    },
-    {
-        "path": "/media/posts/5/placeholder.png",
-        "type": "file",
-        "md5": "58857a583116807f7a6e7511f4595c6b"
-    },
-    {
         "path": "media/posts/5/responsive",
         "type": "directory",
         "md5": false
+    },
+    {
+        "path": "/media/posts/5/responsive/icon-2-lg.png",
+        "type": "file",
+        "md5": "7b0a50eb2a635ea50c315cf91e319f8e"
+    },
+    {
+        "path": "/media/posts/5/responsive/icon-2-md.png",
+        "type": "file",
+        "md5": "7b0a50eb2a635ea50c315cf91e319f8e"
+    },
+    {
+        "path": "/media/posts/5/responsive/icon-2-sm.png",
+        "type": "file",
+        "md5": "7b0a50eb2a635ea50c315cf91e319f8e"
+    },
+    {
+        "path": "/media/posts/5/responsive/icon-2-xs.png",
+        "type": "file",
+        "md5": "ce4ed7c52d3d58d842c5e2723a018f66"
     },
     {
         "path": "/media/posts/5/responsive/icon-lg.png",
@@ -1235,6 +1255,26 @@
         "md5": "3d2dedb47c0453c85b9ddd4bde2ae6ef"
     },
     {
+        "path": "/media/posts/5/responsive/newicon-lg.png",
+        "type": "file",
+        "md5": "3942b34299baf95d8fab4eb0b5f211c4"
+    },
+    {
+        "path": "/media/posts/5/responsive/newicon-md.png",
+        "type": "file",
+        "md5": "3942b34299baf95d8fab4eb0b5f211c4"
+    },
+    {
+        "path": "/media/posts/5/responsive/newicon-sm.png",
+        "type": "file",
+        "md5": "3942b34299baf95d8fab4eb0b5f211c4"
+    },
+    {
+        "path": "/media/posts/5/responsive/newicon-xs.png",
+        "type": "file",
+        "md5": "3942b34299baf95d8fab4eb0b5f211c4"
+    },
+    {
         "path": "/media/posts/5/responsive/pajnk-lin-lg.png",
         "type": "file",
         "md5": "19dd6b93a8b5b5449287ae126472f899"
@@ -1253,46 +1293,6 @@
         "path": "/media/posts/5/responsive/pajnk-lin-xs.png",
         "type": "file",
         "md5": "0efa3bedff86e50b08eb763ba73e3674"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-3-lg.png",
-        "type": "file",
-        "md5": "27dbebcfbe9449b4d23980d1450dd003"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-3-md.png",
-        "type": "file",
-        "md5": "ac272b8f0805880ab8af7f8b11e1b5f2"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-3-sm.png",
-        "type": "file",
-        "md5": "54e30f914c8fb2a0b85f74cd4f6807d5"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-3-xs.png",
-        "type": "file",
-        "md5": "4a22bffb493d4289c6ed2fd3f834fb07"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-lg.png",
-        "type": "file",
-        "md5": "27dbebcfbe9449b4d23980d1450dd003"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-md.png",
-        "type": "file",
-        "md5": "ac272b8f0805880ab8af7f8b11e1b5f2"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-sm.png",
-        "type": "file",
-        "md5": "54e30f914c8fb2a0b85f74cd4f6807d5"
-    },
-    {
-        "path": "/media/posts/5/responsive/placeholder-xs.png",
-        "type": "file",
-        "md5": "4a22bffb493d4289c6ed2fd3f834fb07"
     },
     {
         "path": "media/posts/6",
@@ -1512,7 +1512,7 @@
     {
         "path": "/my-projects-2/index.html",
         "type": "file",
-        "md5": "25f1d376e31d0d413d4f50f67e6e5687"
+        "md5": "5130796aed8c07c14739cef4efba61a3"
     },
     {
         "path": "quanior-and-quapper-and-quack",
@@ -1522,7 +1522,7 @@
     {
         "path": "/quanior-and-quapper-and-quack/index.html",
         "type": "file",
-        "md5": "2519a1adb3f286b7107008e8f873fd8e"
+        "md5": "3937b19dcda082329578007f9a55199c"
     },
     {
         "path": "robots.txt",
